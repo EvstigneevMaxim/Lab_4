@@ -31,13 +31,13 @@ namespace AlgsLab4
             /*Console.WriteLine("BEFORE:");
             for (int i = 0; i < arr.Length; i++) Console.WriteLine("{0}. {1}", i + 1, arr[i]);*/
 
-            /*Stopwatch bubbleTime = new Stopwatch();
+            Stopwatch bubbleTime = new Stopwatch();
             
             bubbleTime.Start();
             BubbleSortString(arr);
             bubbleTime.Stop();
 
-            Console.WriteLine($"BubbleSort: \nTime in Milliseconds:\t{bubbleTime.ElapsedMilliseconds}");*/
+            Console.WriteLine($"BubbleSort: \nTime in Milliseconds:\t{bubbleTime.ElapsedMilliseconds}");
 
 
             /*string[] arr1 = ReadData();
@@ -52,22 +52,12 @@ namespace AlgsLab4
 
             Console.WriteLine($"QuickSort:\nTime in Milliseconds:\t{quickTime.ElapsedMilliseconds}");*/
 
-
-            Stopwatch msdTime = new Stopwatch();
-
-            msdTime.Start();
-            Array.Sort(arr);
-            msdTime.Stop();
-
-            Console.WriteLine($"BubbleSort: \nTime in Milliseconds:\t{msdTime.ElapsedMilliseconds}");
-
-
             /*Console.WriteLine();
             Console.WriteLine("AFTER:");
             for (int i = 0; i < arr.Length; i++) Console.WriteLine("{0}. {1}", i + 1, arr[i]);*/
             //Console.ReadKey();
 
-            /*Dictionary<string, int> valuePairs = GetWordRepeatsCount(arr1);
+            Dictionary<string, int> valuePairs = GetWordRepeatsCount(arr1);
             foreach (var pair in valuePairs)
             {
                 if (pair.Value > 1)
